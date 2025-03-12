@@ -1,0 +1,261 @@
+/* Base Styles */
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background: #000000;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 0;
+}
+
+.logo img {
+    margin-right: 15px;
+}
+
+.site-title {
+    color: white;
+    font-weight: 650;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Profile Column (Left) */
+.profile-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 2px;
+}
+
+.profile-title {
+    font-size: 1rem;
+    color: #799494;
+    margin-bottom: 20px;
+}
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 220px;
+}
+
+.profile-link {
+    margin: 8px 0;
+    padding: 10px 15px;
+    background: #ebebeb;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.profile-link:hover {
+    background: #353535;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.profile-link i {
+    margin-right: 8px;
+}
+
+/* Bio Column (Right) */
+.bio-column {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.hello-title {
+    font-size: 2.5rem;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 800;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+}
+
+.bio-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Blog Section */
+.blog-section {
+    background: #ffffffb7;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #444;
+    font-weight: 400;
+}
+
+.blog-entry {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.blog-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.blog-content h3 {
+    margin: 5px 0 10px;
+    font-weight: 400;
+}
+
+/* Timeline Section */
+.timeline-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    width: 2px;
+    background: #ddd;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 150px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 0;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: #666;
+}
+
+.timeline-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #444;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    background: #ffffff;
+    color: rgb(61, 61, 61);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .profile-column,
+    .bio-column {
+        width: 100%;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-entry {
+        padding-left: 70px;
+    }
+
+    .timeline-date {
+        width: auto;
+        text-align: left;
+        left: 0;
+        top: -25px;
+    }
+}

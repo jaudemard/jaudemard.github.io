@@ -3,63 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 30px;
-        }
-    </style>
+    <title>Juliette Audemard - GitHub Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <header>
         <div class="container">
-            <a class="navbar-brand" href="#">My Website</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
+          <h1 class="logo">
+            <img src="MHAo.gif" height="50px" alt="Shin Chan">
+            <span class="site-title">Juliette Audemard</span>
+          </h1>
+        </div>
+    </header> -->
+
+    <!-- Main Content - Two Column Layout -->
+    <main class="main-content">
+        <!-- Left Column - Profile & Links -->
+        <div class="profile-column">
+            <div class="profile-image">
+                <!-- Replace with your actual image -->
+                <img src="shin-chan.jpg" alt="it's just shin-chan">
+            </div>
+            <h2 class="profile-name">Juliette Audemard</h2>
+            <div class="profile-title">Bioinformatics Master's Student</div>
+            <div class="profile-links">
+                <a href="juliette.aud@live.fr" class="profile-link">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </a>
+                <a href="https://github.com/jaudemar" class="profile-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="cv.pdf" class="profile-link">
+                    <i class="fas fa-file-alt"></i> Curriculum Vitae
+                </a>
+                <a href="https://orcid.org/0009-0006-1961-8013" class="profile-link">
+                    <i class="fab fa-orcid"></i> ORCID
+                </a>
             </div>
         </div>
-    </nav>
+        
+        <!-- Right Column - Bio -->
+        <div class="bio-column">
+            <h2 class="hello-title">Hello :)</h2>
+            <div class="bio-content">
+                <p>
+                    Hi, I'm a Master's student in Bioinformatics, currently working at the French National Institute of Numerical Sciences and Technology (Inria) as an intern.
+                </p>
+                <p>
+                    I'm passionate about systems biology, a huge scrabble enthusiast (I can beat your grandma) and sometimes sketch in my free time.
+                </p>
+                <p>
+                    My research focuses on metabolic networks, discrete models of metabolism and cyanobacteria-centered community.
+                </p>
+            </div>
+        </div>
+    </main>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h1 class="text-center">Welcome to My Website</h1>
-        <p class="text-center">This is a simple, clean site hosted on GitHub Pages.</p>
-        <p class="text-center">You can add more pages by creating new `.html` files and linking them.</p>
-    </div>
+    <!-- Blog Section -->
+    <section class="blog-section">
+
+        <div class="blog-entry">
+            <div class="blog-date">June 25, 2024</div>
+            <div class="blog-content">
+                <h3>JOBIM 2024</h3>
+                <p>I presented a Poster at the <i>Journées Ouvertes de Biologie, Informatique et Mathématiques</i> conference at Toulouse, France. It was selected to be highlighted the openning day with a <i>flash</i> presentation of 3 minutes.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">       
+        <div class="timeline">
+            <!-- Timeline Entry -->
+            <div class="timeline-entry">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                    <h3>Research Intern</h3>
+                    <p>Inria - French National Institute of Numerical Sciences and Technology</p>
+                    <p>COMIC Project | Genome-scale metabolic modelling of freshwater cyanobacteria-centered communities</p>
+                </div>
+            </div>
+
+            <!-- Timeline Entry -->
+            <div class="timeline-entry">
+                <div class="timeline-date">2023 - 2025</div>
+                <div class="timeline-content">
+                    <h3>MSc in Bioinformatics</h3>
+                    <p>Université Paris Cité</p>
+                    <p>Thesis: Genome-scale metabolic modeling of freshwater cyanobacteria-centered communities</p>
+                </div>
+            </div>
+
+            <!-- Timeline Entry -->
+            <div class="timeline-entry">
+                <div class="timeline-date">2020 - 2023</div>
+                <div class="timeline-content">
+                    <h3>Bachelor's in Biomedical Sciences</h3>
+                    <p>Université Paris Descartes</p>
+                    <p>Biochemistry, Biostatistics, Biology of Infectious Agents</p>
+                    <p><b>Thesis</b> Partnership between mucus, mucins and the gut microbiome</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        &copy; 2025 My Name - All Rights Reserved
+        <div class="container">
+            &copy; 2025 Juliette Audemard - All rights reserved
+        </div>
     </footer>
-
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
