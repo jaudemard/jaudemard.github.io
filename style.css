@@ -218,10 +218,17 @@ header::after {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.timeline-content h3 {
+.timeline-content:hover {
+    background: #1d1d1d;
+    color: white;
+    transform: translateY(-3px);
+    transition-duration: 800ms;
+}
+
+.timeline-title {
     margin-top: 0;
     color: #444;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 /* Footer */
