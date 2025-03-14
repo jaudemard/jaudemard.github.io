@@ -225,10 +225,14 @@ header::after {
     transition-duration: 800ms;
 }
 
+.timeline-highlight {
+    font-weight: 700;
+}
+
 .timeline-title {
     margin-top: 0;
     color: #444;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 /* Footer */
