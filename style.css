@@ -101,7 +101,7 @@ header::after {
 .profile-link {
     margin: 8px 0;
     padding: 10px 15px;
-    background: #ebebeb;
+    background: #ecebebb7;
     color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 5px;
@@ -139,42 +139,80 @@ header::after {
     margin-bottom: 15px;
 }
 
-/* Blog Section */
-.blog-section {
-    background: #ffffffb7;
-    padding: 40px 20px;
+/* Publications Section */
+.publications-section {
+    background: #f7f7f7;
+    padding: 10px 20px;
     max-width: 1200px;
     margin: 0 auto 40px;
     border-radius: 10px;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #444;
-    font-weight: 400;
+.publication-entry {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    /* border-bottom: 1px solid #d4d4d4;*/
+}
+
+.publication-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.publication-authors {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.publication-source {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+/* Blog Section */
+.blog-section {
+    background: #ffffffb7;
+    padding: 5px 20px;
+    max-width: 1200px;
+    margin: 0px auto 40px;
+    border-radius: 10px;
+}
+
+.blog-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 .blog-entry {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #eee;
 }
 
 .blog-date {
     font-size: 0.9rem;
     color: #777;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .blog-content h3 {
-    margin: 5px 0 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-weight: 400;
+}
+
+.blog-content p {
+    margin: 0px 0 10px;
 }
 
 /* Timeline Section */
 .timeline-section {
+    background: #f7f7f7;
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto 40px;
@@ -222,7 +260,7 @@ header::after {
     background: #1d1d1d;
     color: white;
     transform: translateY(-3px);
-    transition-duration: 800ms;
+    transition-duration: 300ms;
 }
 
 .timeline-highlight {
