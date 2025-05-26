@@ -282,6 +282,13 @@ footer {
     margin-top: 40px;
 }
 
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .main-content {
